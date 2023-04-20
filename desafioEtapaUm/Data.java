@@ -5,40 +5,49 @@ public class Data {
     public int ano;
 
     public Data(int dia, int mes, int ano) {
-        if(!isValido(dia, mes, ano)){
+        if (!isValido(dia, mes, ano)) {
             dia = 1;
             mes = 1;
             ano = 2000;
             System.out.println("Erro: Data Inválida");
-            //throw new Exception("Data Inválida");
+            // throw new Exception("Data Inválida");
         }
         this.ano = ano;
         this.mes = mes;
         this.dia = dia;
     }
+
     public int getAno() {
         return ano;
     }
+
     public int getDia() {
         return dia;
     }
+
     public int getMes() {
         return mes;
     }
+
     public void setAno(int ano) {
         this.ano = ano;
     }
+
     public void setDia(int dia) {
         this.dia = dia;
     }
+
     public void setMes(int mes) {
         this.mes = mes;
     }
-    public String toString(){
+
+    public String toString() {
         return this.dia + "/" + this.mes + "/" + this.ano;
     }
 
     private boolean isValido(int dia, int mes, int ano) {
+        if (dia < 1 || mes < 1)
+            return false;
         if (mes > 12)
             return false;
         if (dia > 31)
@@ -53,7 +62,7 @@ public class Data {
         return true;
     }
 
-    public boolean isBissexto(){
+    public boolean verificaAnoBissexto() {
         return isBissexto(this.ano);
     }
 

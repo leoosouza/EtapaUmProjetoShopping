@@ -5,6 +5,6 @@ public class TesteData {
         System.out.println(data.getMes()); 
         System.out.println(data.getDia());
         System.out.println(data);
-        System.out.println(data.isBissexto());
+        System.out.println(data.verificaAnoBissexto());
     }
 }
