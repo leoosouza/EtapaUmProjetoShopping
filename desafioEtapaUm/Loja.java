@@ -22,7 +22,7 @@ public class Loja {
         return nome;
     }
     
-    public void setNome() {
+    public void setNome(String nome) {
         this.nome = nome;
     }
     
@@ -30,7 +30,7 @@ public class Loja {
         return quantidadeFuncionarios;
     }
     
-    public void setQuantidadeFuncionarios() {
+    public void setQuantidadeFuncionarios(int quantidadeFuncionarios) {
         this.quantidadeFuncionarios = quantidadeFuncionarios;
     }
     
@@ -38,7 +38,7 @@ public class Loja {
         return salarioBaseFuncionario;
     }
     
-    public void setSalarioBaseFuncionario() {
+    public void setSalarioBaseFuncionario(double salarioBaseFuncionario) {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 }
